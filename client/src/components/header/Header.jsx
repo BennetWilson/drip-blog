@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.css'
-import DripCover from '../../Assets/Drip-Cover2.jpeg'
 
 
 export default function Header () {
@@ -10,7 +9,7 @@ export default function Header () {
         <span classname='headerTitleSm'>React & Node</span>
         <span className='headerTitleLg'>Blog</span>
         </div> 
-        <img className='headerImg' src={DripCover} alt="" />          
+        <img className='headerImg' src="https://via.placeholder.com/2500" alt="" />          
         </div>
     );
 }
