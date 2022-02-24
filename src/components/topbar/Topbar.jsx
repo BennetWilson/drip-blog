@@ -3,14 +3,13 @@ import { Link } from "react-router-dom"
 import "./topbar.css";
 
 export default function TopBar() {
-  const user = false;
+  const user = true;
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fa-brands fa-facebook-square"></i>
-        <i className="topIcon fa-brands fa-twitter-square"></i>
-        <i className="topIcon fa-brands fa-pinterest-square"></i>
-        <i className="topIcon fa-brands fa-instagram-square"></i>
+        <i className="topIcon fa-brands fa-linkedin"></i>
+        <i className="topIcon fa-brands fa-github-square"></i>
+        
       </div>
       <div className="topCenter">
         <ul className="topList">
