@@ -9,6 +9,9 @@
 }
 .topCenter {
     flex: 6;
+    align-items: center;  /*To revert back to how we had it, remove line 12-14.*/
+    justify-content: center;
+    display:flex
   }
   
 .topLeft,.topRight {
@@ -18,10 +21,14 @@
   justify-content: center;
 }
 .topIcon {
-  font-size: 20px;
+  font-size: 30px;
   margin-right: 10px;
   color: #444;
   cursor: pointer;
+}
+.topIcon:hover{
+  transform: scale(1.5);
+  color: #ab7343;
 }
 .topImg {
   width: 40px;
@@ -41,12 +48,21 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer ;
+    font-weight: 600;
 }
-
+.topListItem:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+  color: #ab7343;
+}
 .topSearchIcon {
     font-size: 18;
     color: #444;
     cursor: pointer;
     margin-left: 15px;
+}
+.topSearchIcon:hover{
+  transform: scale(1.5);
+  color: #ab7343;
 }
 
