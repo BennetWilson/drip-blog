@@ -6,7 +6,7 @@ export default function SinglePost () {
         <div className='singlePost'>
             <div className="singlePostWrapper">
                 <img src="https://via.placeholder.com/250" alt="" className="singlePostImg" />
-                <h1 className="singlePostTitle">Lorem ipsum dolor sit amet
+                <h1 className="singlePostTitle">Coffee, the best kind of bean
                 <div className="singlePostEdit">
                     <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
                     <i className="singlePostIcon fa-solid fa-trash"></i>
