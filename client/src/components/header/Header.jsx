@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css'
-import DripCover from '../../assets/Drip-Cover.jpeg'
+import DripCover from '../../Assets/Drip-Cover.jpeg'
 
 
 export default function Header () {
