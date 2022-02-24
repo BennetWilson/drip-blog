@@ -8,19 +8,27 @@
     align-items: center;
     /* font-family: ; */
     color: #444;
+    margin-bottom: 50px;
 }
 
 .headerTitleSm {
     position: absolute;
+    padding-top: 100px;
     top: 18%;
     font-size: 20px;
+    color: black;
 }
 
 .headerTitleLg {
     position: absolute;
     top: 14%;
     font-size: 100px;
-    color: white;
+    color: black;
+    padding-bottom: 25px;
+}
+
+.headerTitleLg i {
+    color: #624226;
 }
 
 .headerImg {
