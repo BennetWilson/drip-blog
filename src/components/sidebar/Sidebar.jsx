@@ -28,8 +28,8 @@ export default function Sidebar() {
       <div className="sideBarItem">
         <span className="sideBarTitle">FOLLOW US</span>
         <div className="sideBarSocial">
-          <i className="sideBarIcon fa-brands fa-linkedin"></i>
-          <i className="sideBarIcon fa-brands fa-github-square"></i>
+        <a target='_blank'href="https://www.linkedin.com/in/taylor-garrey-4934b71a8/">  <i className="topIcon fa-brands fa-linkedin"></i> </a>
+       <a target="_blank" href="https://github.com/BennetWilson/drip-blog"> <i className="topIcon fa-brands fa-github-square"></i> </a>
          
         </div>
       </div>
