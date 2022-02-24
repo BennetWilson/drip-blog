@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require('mongoose')
 
 dotenv.config();
+// note for commit
 
 mongoose.connect("mongodb://localhost/blog", {
     useNewUrlParser:true,
