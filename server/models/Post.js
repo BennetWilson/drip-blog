@@ -1,5 +1,14 @@
 const mongoose = require("mongoose");
-const categorySchema = require("./Category");
+
+
+const categorySchema = new mongoose.Schema(
+    {
+     name: {
+         type: String,
+         required: true
+     }
+    },
+  );
 
 const postSchema = new mongoose.Schema(
   {
@@ -18,9 +27,9 @@ const postSchema = new mongoose.Schema(
     },
     categories: [categorySchema]
   },
-  { timestamps: true }
 );
 
 
 const Post = mongoose.model('Post', postSchema);
 module.exports = Post;
+
