@@ -25,6 +25,7 @@ type Auth {
 
 type Query {
     me: User
+    posts: Post
 }
 
 type Mutation {

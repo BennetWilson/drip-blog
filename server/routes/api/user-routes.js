@@ -15,8 +15,8 @@ router.route('/').post(createUser).put(authMiddleware, saveBook);
 
 router.route('/login').post(login);
 
-router.route('/me').get(authMiddleware, getSingleUser);
+router.route('/register').get(authMiddleware, getSingleUser);
 
-router.route('/books/:bookId').delete(authMiddleware, deleteBook);
+router.route('/post/:userId').delete(authMiddleware, deleteBook);
 
 module.exports = router;

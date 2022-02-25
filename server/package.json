@@ -1,27 +1,21 @@
 {
+  "dependencies": {
+    "apollo-server-express": "2.12",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "graphql": "^15.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server",
-    "seed": "node seeders/seed.js"
-  },
+  "main": "server.js",
+  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "apollo-server-express": "^2.15.0",
-    "bcrypt": "^4.0.1",
-    "db": "^3.3.1",
-    "express": "^4.17.1",
-    "graphql": "^15.8.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.4.0",
-    "mongoose": "^5.13.14"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "description": ""
 }
