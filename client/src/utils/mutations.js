@@ -23,3 +23,8 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_POST = gql`
+  mutation addPost(title: String!, desc: String!, photo: String, categories: [String]): Post
+    addPost(title: $title, desc: $desc, photo: $writeImg)
+`
