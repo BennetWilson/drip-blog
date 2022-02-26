@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const Post = require("../models/Post");
+const {signToken} = require('../utils/auth');
 
 const resolvers = {
   Query: {
@@ -19,7 +20,25 @@ const resolvers = {
         password: args.password,
         email: args.email,
       });
-      return user;
+      const token = signToken(user);
+      return {token, user};
+    },
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw new AuthenticationError('No user found with this email address');
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
     },
     addPost: async(parent, {title, desc, photo, categories }) => {
         console.log(categories);
