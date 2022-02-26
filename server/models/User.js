@@ -1,6 +1,7 @@
 const { default: mongoose } = require("mongoose");
 const {Schema} = require("mongoose");
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
+const Post = require("./Post");
 
 
 
@@ -26,7 +27,8 @@ const userSchema = new Schema({
       posts: [{
           type: Schema.Types.ObjectId,
           ref: 'Post'
-      }]
+      }],
+
 });
 
 // hash user password

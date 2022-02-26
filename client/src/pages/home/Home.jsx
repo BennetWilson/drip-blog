@@ -11,11 +11,11 @@ import {useState, useEffect} from "react"
 export default function Home () {
     const [posts, setPosts] = useState([]);
 
-    useEffect(() =>{
-        const fetchPosts = async () =>{
-            axios.get("")
-        }
-},[])
+//     useEffect(() =>{
+//         const fetchPosts = async () =>{
+//             axios.get("")
+//         }
+// },[])
 
     return (
         <>

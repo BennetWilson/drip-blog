@@ -23,3 +23,17 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_POST = gql`
+mutation addPost($title: String, $desc:String, $photo:String) {
+  addPost(title:$title, desc:$desc, photo:$photo) {
+    _id
+    username
+      title
+      desc
+      photo
+    
+  }
+}
+
+`
