@@ -82,7 +82,7 @@ const resolvers = {
       //     desc,
       //     photo,
       //     $addToSet: { categories: catArr },
-      //     //upsert is used with findOneAndUpdate
+     
       //   });
       //   return post;
     },
@@ -92,4 +92,4 @@ const resolvers = {
 module.exports = resolvers;
 
 
-// sdjkfb
+
